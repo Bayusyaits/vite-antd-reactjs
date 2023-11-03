@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  vite-antd-react:
+    image: "docker.cicd-jfrog.antd.co.id/dev/vite-react-antd:latest"
+    restart: always
+    ports:
+      - 3000:5173
+    env_file:
+      - vite-antd-react-compose.env
